@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>
+			Cyclomania — Cardanee
+		</title>
+		<style>
+			.title {
+				font-size: 70px;
+				font-family: Roboto, "Gill Sans MS", Arial, serif;
+			}
+			description {
+				font-size: 40px;
+				font-family: Georgia, serif;
+			}
+			.boutons {
+				font-size: 30px;
+				font-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var pseudo = prompt('Comment vous applez\u002dvous\u003f\u000a\u000a\u0028L’info reste confidentielle\u002c\u0020c’est juste pour dire votre nom sur cette page\u002e\u0020Mettre une lettre majuscule au début s’il\u002dvous\u002dpla\u00eet\u002e\u0029')
+			alert(
+				'Bonjour\u0020' + pseudo + '\u0020\u0021\u0020Ceci est un template vid\u00e9o\u0020cr\u00e9e par Cardanee. Amusez\u002dvous\u0020\u0021'
+			)
+		</script>
+		<hr />
+		<marquee
+			class="title">
+				<a href="#" onclick="alert(pseudo + '\u002c\u0020\u00e7a\u002c\u0020c’est le titre de la vid\u00e9o\.')">
+					Cyclomania
+				</a>
+		</marquee>
+		<hr />
+		<description>
+			<!-- enlever seulement la balise <a>...</a> suivante,
+			mais pas ce qui est dedans -->
+			<a
+				href="#"
+				onclick="alert(pseudo + '\u002c\u0020\u00e7a\u002c\u0020c’est la description de la vid\u00e9o\u002e\u0020Et plus pr\u00e9cis\u00e9ment\u002c\u0020le nom de l’auteur\u002e')">
+					par
+						<b>
+							Cardanee
+						</b>
+			</a>
+					<br />
+			<!-- enlever seulement la balise <a>...</a> suivante,
+			mais pas ce qui est dedans -->
+			<a
+				href="#"
+				onclick="alert(pseudo + '\u002c\u0020\u00e7a\u002c\u0020c’est la description de la vid\u00e9o\u002e\u0020Et plus pr\u00e9cis\u00e9ment\u002c\u0020l’album dans lequel il est ralli\u00e9\u002e')">
+					pour l'album&nbsp;&lsaquo;&lsaquo;
+						<i>
+							&iexcl;nvers&eacute;
+						</i>
+					&rsaquo;&rsaquo;
+			</a>
+		</description>
+		<hr />
+		<preview-de-video>
+			<center>
+				<!-- Changez «cyclomania.mp4» par
+				la vidéo souhaitée. -->
+				<telecharger-la-video>
+					<a href="#intobrowser" onclick="if (confirm('Vous voulez vraiment quitter la page pour aller dans le lecteur natif de votre navigateur\u002c\u0020' + pseudo + '\u0020\u003f')) { alert('Comme vous voulez\u002e\u0020De toute fa\u00e7on je suis une tablette et je ne m’appelle pas\u0020\u00ab\u0020' + pseudo + '\u0020\u00bb\u002e\u000a\u0028C’est pas cette année qu’on se r\u00e9volte...\u0029'); location = 'file:///storage/emulated/0/cyclomania.mp4'; };">
+						<button>
+							Vous voulez avoir la vid&eacute;o
+							en lecture par d&eacute;faut ?
+						</button>
+					</a>
+				</telecharger-la-video>
+				<hr />
+				<a href="#video">
+					
+					<video
+						src="cyclomania.mp4"
+						id="preview"
+						height="100px"
+						width="100px">
+					</video>
+					<script>
+						var miniature = document.querySelector('#preview')
+						miniature.pause() /* On veut que la miniature
+														ne joue pas comme
+														une vidéo */
+					</script>
+				</a>
+			</center>
+		</preview-de-video>
+		<hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr /><br /><hr />
+		<contenu-de-video>
+			<center>
+				<video
+					height="600px"
+					width="600px"
+					video height="580px"
+					videowidth="580px"
+					src="cyclomania.mp4"
+					id="video">
+					<p>
+						<b>
+							<a
+								href="#help"
+								onclick="alert('Ah\u0020' + pseudo + '\u0020... Vu que votre navigateur ne prends pas en charge la lecture vid\u00e9o\u002c\u0020je vous conseille\u0020d’utiliser Firefox\u002e\u000aC’est pour cela que vous allez\u0020\u00eatre\u0020redirig\u00e9\u0020vers leur page d’acceuil\u002e')">
+							⚠ Votre navigateur ne prends
+							pas en charge la lecture vid&eacute;o,
+							la lecture du format
+							M&nbsp;P&nbsp;E&nbsp;G&nbsp;4&#44;
+							ou JavaScript.
+							</a>
+						</b>
+					</p>
+				</video>
+				<hr />
+			</center>
+		</contenu-de-video>
+	</body>
+</html>
